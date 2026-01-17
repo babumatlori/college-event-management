@@ -30,7 +30,7 @@ export const EventsProvider = ({children})=>{
   //fetch data of regis
   const fetchMyEvents= useCallback(async()=>{
 
-    if(!currentUser || localStorage.getItem("token"))
+    if(!currentUser || !localStorage.getItem("token"))
 
       return;
     try{
@@ -50,10 +50,10 @@ export const EventsProvider = ({children})=>{
     fetchEvents();
   },[auth?.token]);
 
-  useEffect(()=>{
-    if(!auth?.token && currentUser)
-    fetchMyEvents();
-  },[currentUser, fetchMyEvents,auth?.token]);
+  // useEffect(()=>{
+  //   if(currentUser)
+  //   fetchMyEvents();
+  // },[currentUser, fetchMyEvents,auth?.token]);
 
   // regis
   const registerEvent=async (eventId)=>{
