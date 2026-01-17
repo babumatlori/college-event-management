@@ -1,0 +1,50 @@
+.auth-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.auth-container h2{
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.auth-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-container input,
+.auth-container select{
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border:1px solid lightblue
+}
+
+.auth-btn{
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.Registerster{
+    background-color: blue;
+    color: black;
+    display: flex;
+}
+

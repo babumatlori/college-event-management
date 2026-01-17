@@ -1,0 +1,91 @@
+
+.events-cont{
+    /* padding-top:20px ; */
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+.events-cont h1{
+    padding-top: 20px;
+}
+
+.search-bar{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius:10px;
+    border: 1px solid #000000;
+}
+
+
+.events-grid{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;    
+}
+
+.event-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.2s;
+    
+}
+
+.event-card:hover{
+     transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.event-card h2{
+    color: navy;
+}
+
+.register-btn{
+    background-color: navy;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ;
+}
+
+.register-btn:hover{
+    background-color: #fbbf24;
+    color: black;
+}
+
+.add-event-btn{
+    background-color: #10b981;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 20px;
+    width: 100px;
+
+}
+.add-event-btn:hover{
+    background-color: #011f11;
+}
+
+.eventRegistered-btn{
+    background-color: green;
+    color: white;
+    border: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eventRegistered-btn:hover{
+   background-color: white;
+   color: green;
+}

@@ -1,0 +1,191 @@
+.navbar{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* used to color from left to right */
+    background-image:linear-gradient(to right, #F3904F,#4c5895) ;
+    padding: 25px 25px;
+}
+
+.navbar-logo a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-links{
+    list-style: none;
+    display: flex;
+    gap:18px;
+    margin:0;
+    padding: 0%;
+}
+
+.navbar-links a{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.navbar-links a:hover{
+
+     background-color: rgba(255, 255, 255, 0.2);
+     text-shadow:white;
+     text-decoration:underline;
+}
+
+.navbar-logo a:hover{
+    /* text-decoration: underline; */
+    background-color: transparent;
+}
+.logout-btn{
+    background-color: #ef4444;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-btn:hover{
+    background-color: #dc2626;
+}
+
+.theme-btn{
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+/* for theme */
+body.light {
+  background-color: #f0f0f0;
+  color: #333333;
+  transform: 2s;
+}
+
+body.light .navbar-logo a,
+body.light .navbar-links a {
+  color: white;
+}
+
+body.light .logout-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+body.light .logout-btn:hover {
+  background-color: #dc2626;
+}
+
+body.light .theme-btn {
+  background-color: #3b82f6;
+  color: rgb(14, 13, 13);
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: darkgray;
+  color: #121212;
+}
+
+body.dark .navbar {
+  background-color: black;
+}
+
+body.dark .navbar-logo a,
+body.dark .navbar-links a {
+  color:#F8C555;
+}
+
+body.dark .logout-btn {
+  background-color: #ef4444;
+  color: #F8C555;
+}
+
+body.dark .logout-btn:hover {
+  background-color: #dc2626;
+}
+
+body.dark .theme-btn {
+  background-color: #2563eb; /* darker blue for dark mode */
+  color:white;
+}
+
+body.dark div.home-container{
+    padding: 20px;
+    background-color: darkgrey;
+}
+body.dark .event-card{
+    background-color: grey;
+    color: white;
+}
+body.light div.home-container{
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+/* home*/
+body.dark div.event-cards{
+    background-color: grey;
+    color: white;
+}
+
+body.light div.event-cards{
+    background-color: white;
+    color: black;}
+body.light .event-card{
+    background-color: white;
+    color: black;
+}
+
+body.dark div.events-cont{
+    background-color: darkgrey;
+    color: black;
+}
+
+body.dark div.myevents-cont{
+  background-color: darkgrey;
+  color: black;
+}
+
+
+body.light div.auth-container{
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+body.dark div.auth-container{
+    padding: 20px;
+    background-color: grey;
+    color: white;
+}
+
+body.dark .search-bar{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius:10px;
+    border: 2px solid #000000;
+    background-color:darkgray;
+    color: white;
+}
+
+
+body.dark .auth-container h2{
+
+  color: #F8C555;
+}
+.body.dark .auth-btn{
+  color: #F8C555;
+  background-color: #000000;
+}
